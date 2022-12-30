@@ -3,6 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { Hero } from '../types/Hero';
 import { HttpParams } from '@angular/common/http';
+import { HeroesListComponent } from '../heroes-list/heroes-list.component';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -22,5 +24,10 @@ export class BackendService {
   getHero(id: String): Promise<Hero> {
     let queryParams = {"id":id.toString()};
     return this.http.get<Hero>(`${environment.api}/heroes/:id?id=${id}`).toPromise();
+  }
+  makehero(hero: Hero): Observable<any>{
+
+    return this.http.post(`${environment.api}/heroes`, hero)
+
   }
 }
