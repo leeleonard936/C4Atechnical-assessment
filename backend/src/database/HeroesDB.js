@@ -2,7 +2,12 @@ import { Hero } from "../types/Hero.js";
 
 export class HeroesDB {
     static instance = undefined;
-    heroes = []; // Database array
+    heroes = [
+        {name:'arthur',
+        id:'1',
+    class:'wizard',
+    level:'1'}
+    ]; // Database array
 
     /**
      * Gets an instance of the database

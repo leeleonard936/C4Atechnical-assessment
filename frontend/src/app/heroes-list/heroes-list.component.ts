@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { BackendService } from '../services/backend.service';
 import { Hero } from '../types/Hero';
+import { MatCardModule } from '@angular/material/card'
+
+
 
 @Component({
   selector: 'app-heroes-list',
