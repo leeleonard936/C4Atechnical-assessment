@@ -6,7 +6,7 @@ export class HeroesDB {
         {name:'arthur',
         id:'1',
     class:'wizard',
-    level:'1'}
+    level:1}
     ]; // Database array
 
     /**

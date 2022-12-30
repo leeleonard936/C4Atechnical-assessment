@@ -5,15 +5,26 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeroesListComponent } from './heroes-list/heroes-list.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCardModule } from '@angular/material/card';
 import { ViewHeroComponent } from './view-hero/view-hero.component';
+import { CreateHeroComponent } from './create-hero/create-hero.component';
+
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+import { MatCardModule } from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesListComponent,
-    ViewHeroComponent
+    ViewHeroComponent,
+    CreateHeroComponent
   ],
   imports: [
     BrowserModule,
@@ -21,6 +32,8 @@ import { ViewHeroComponent } from './view-hero/view-hero.component';
     HttpClientModule,
     BrowserAnimationsModule,
     MatCardModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

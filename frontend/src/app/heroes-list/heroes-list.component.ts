@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { BackendService } from '../services/backend.service';
 import { Hero } from '../types/Hero';
 import { MatCardModule } from '@angular/material/card'
-
+import { MatButtonModule } from '@angular/material/button';
 
 
 @Component({

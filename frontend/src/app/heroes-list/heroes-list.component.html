@@ -2,8 +2,11 @@
 <ul>
     <!--Displays a list of hero names-->
     <li *ngFor="let hero of heroes">
-      <a routerLink="view" [queryParams]="{id : hero.name}" routerLinkActive="active" ariaCurrentWhenActive="page">
+      <a routerLink="view" [queryParams]="{id : hero.id}" routerLinkActive="active" ariaCurrentWhenActive="page">
         <mat-card><mat-card-content>{{ hero.name }}</mat-card-content></mat-card>
       </a>
     </li>
-</ul>
+    <a routerLink="create">
+      <button mat-button>Create a Hero</button>
+    </a>
+  </ul>
