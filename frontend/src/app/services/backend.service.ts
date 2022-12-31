@@ -32,7 +32,7 @@ export class BackendService {
   }
   deleteHero(id: string): Observable<any>{
 
-    return this.http.delete('${environment.api}/heroes/id=${id}')
+    return this.http.delete(`${environment.api}/heroes/${id}`)
   }
 
 }

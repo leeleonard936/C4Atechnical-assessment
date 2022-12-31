@@ -1,1 +1,13 @@
-<p>edit-hero works!</p>
+<mat-form-field>
+  <mat-label>Name</mat-label>
+  <input matInput required [(ngModel)]="name" Placeholder="{hero.name}">
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Class</mat-label>
+  <input matInput required [(ngModel)]="class" Placeholder="{hero.class}">
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Class</mat-label>
+  <input  type = "number" matInput required [(ngModel)]="level" Placeholder="{hero.level}">
+</mat-form-field>
+<button mat-button (click) = "edit()">Edit</button>

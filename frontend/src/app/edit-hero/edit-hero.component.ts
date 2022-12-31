@@ -13,10 +13,16 @@ import { HeroesListComponent } from '../heroes-list/heroes-list.component';
   styleUrls: ['./edit-hero.component.css']
 })
 export class EditHeroComponent implements OnInit {
-
+  public name: string
+  public class: string
   heroes: Hero[] = [];
+  public level: number
   id: string = "-1";
-  constructor(private backend: BackendService, private route: ActivatedRoute, private router: Router) { }
+  constructor(private backend: BackendService, private route: ActivatedRoute, private router: Router) {
+    this.name = ''
+    this.class = ''
+    this.level = 0
+  }
   hero: Hero = {name:'not a name',
   id:'0',
 class:'N/A',
@@ -31,6 +37,9 @@ level:0};
       if(h.id == this.id){
         this.hero = h;
       }
+      this.name = this.hero.name
+      this.class = this.hero.class
+      this.level = this.hero.level
     }
     );
 
