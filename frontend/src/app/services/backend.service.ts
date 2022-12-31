@@ -30,4 +30,8 @@ export class BackendService {
     return this.http.post(`${environment.api}/heroes`, hero)
 
   }
+  deleteHero(id: string): Observable<any>{
+
+    return this.http.delete('${environment.api}/heroes/${id}')
+  }
 }

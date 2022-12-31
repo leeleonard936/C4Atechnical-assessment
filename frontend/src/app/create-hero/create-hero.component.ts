@@ -26,6 +26,6 @@ export class CreateHeroComponent implements OnInit {
     this.hero.class = this.class
     this.backend.makehero(this.hero).subscribe(() => {
       console.log('Hero added successfully');});
-    this.router.navigate([''])
+    //this.router.navigate([''])
   }
 }

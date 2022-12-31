@@ -8,11 +8,11 @@ import { Router } from '@angular/router';
 import { HeroesListComponent } from '../heroes-list/heroes-list.component';
 
 @Component({
-  selector: 'app-view-hero',
-  templateUrl: './view-hero.component.html',
-  styleUrls: ['./view-hero.component.css']
+  selector: 'app-edit-hero',
+  templateUrl: './edit-hero.component.html',
+  styleUrls: ['./edit-hero.component.css']
 })
-export class ViewHeroComponent implements OnInit {
+export class EditHeroComponent implements OnInit {
 
   heroes: Hero[] = [];
   id: string = "-1";
@@ -31,17 +31,12 @@ level:0};
       if(h.id == this.id){
         this.hero = h;
       }
-      // else{
-      //   this.router.navigate([''])
-      // }
     }
     );
 
   }
-  delete(): void {
-    this.backend.deleteHero(this.id).subscribe(() => {
-      console.log('Hero deleted successfully');});
-    //this.router.navigate([''])
+  edit(): void{
+
   }
 
 }

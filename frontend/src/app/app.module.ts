@@ -17,6 +17,7 @@ import { MatCardModule } from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { EditHeroComponent } from './edit-hero/edit-hero.component';
 
 
 
@@ -25,7 +26,8 @@ import { MatInputModule } from '@angular/material/input';
     AppComponent,
     HeroesListComponent,
     ViewHeroComponent,
-    CreateHeroComponent
+    CreateHeroComponent,
+    EditHeroComponent
   ],
   imports: [
     BrowserModule,
