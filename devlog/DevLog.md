@@ -4,6 +4,7 @@
 
 I plan to do all 4 of the front end tasks
 
+Unfortunately I can't get the reroute to work
 
 ## Installs
 installed angular material to make building the front end easier
@@ -20,5 +21,11 @@ used this documentation to determine the best way to send hero data to the viewh
 Ran into an issue when attempting to inject a typescript variable into html, did not realize it was as easy as it is. I was attempting to add brackets around the variable name when i did not need to.
 
 ## Issue #2
-Matformfield will not show until clicked. I do not know how to fix this and none of the documentation has any hints, nothing on stackoverflow either
+Matformfield will not show until clicked. I do not know how to fix this and none of the documentation has any hints, nothing on stackoverflow either *** to be fixed
+
+## Issues with post
+post request to create a hero would not execute, I troubleshooted using the angular documentation. I was not currectly implementing the request
+
+## Issues with delete
+The same issue with delete is occuring as with post, I think im not correctly formatting the data to go to the api
 
