@@ -30,3 +30,6 @@ post request to create a hero would not execute, I troubleshooted using the angu
 The same issue with delete is occuring as with post, I think im not correctly formatting the data to go to the api
 **update - this was exactly what was happening, I was attempting to send a body instead of appending the id to the end of the url
 
+## Issues with edit
+Edit does not excute correctly, I do not know if it is potentially a problem with the backend.service that I wrote or with the call to it.
+

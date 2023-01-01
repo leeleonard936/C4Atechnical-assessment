@@ -7,7 +7,7 @@
           {{ hero.name }}
         </mat-card-content></mat-card>
       </a>
-      <a routerlink="edit">
+      <a routerLink="edit" [queryParams]="{id : hero.id}" routerLinkActive="active" ariaCurrentWhenActive="page">
         <button mat-button>Edit</button>
     </a>
     </li>

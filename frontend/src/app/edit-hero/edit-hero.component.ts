@@ -36,16 +36,21 @@ level:0};
     {
       if(h.id == this.id){
         this.hero = h;
-      }
-      this.name = this.hero.name
-      this.class = this.hero.class
-      this.level = this.hero.level
-    }
-    );
 
+      }
+
+    }
+
+    );
+    this.name = this.hero.name
+    this.class = this.hero.class
+    this.level = this.hero.level
   }
   edit(): void{
-
+    this.hero.name = this.name
+    this.hero.class = this.class
+    this.hero.level = this.level
+    this.backend.editHero(this.hero)
   }
 
 }

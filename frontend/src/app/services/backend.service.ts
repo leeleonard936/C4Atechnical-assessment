@@ -23,7 +23,7 @@ export class BackendService {
   }
   getHero(id: String): Promise<Hero> {
     let queryParams = {"id":id.toString()};
-    return this.http.get<Hero>(`${environment.api}/heroes/id=${id}`).toPromise();
+    return this.http.get<Hero>(`${environment.api}/heroes/${id}`).toPromise();
   }
   makehero(hero: Hero): Observable<any>{
 
@@ -33,6 +33,18 @@ export class BackendService {
   deleteHero(id: string): Observable<any>{
 
     return this.http.delete(`${environment.api}/heroes/${id}`)
+  }
+  editHero(hero:Hero){
+    let id = hero.id
+    let partialhero = {
+      name: hero.name,
+      class: hero.class,
+      level: hero.level
+    }
+    return this.http.patch(`${environment.api}/heroes/${id}`, partialhero).subscribe((response) => {
+      console.log(response);
+    });
+
   }
 
 }
