@@ -3,7 +3,7 @@
     <!--Displays a list of hero names-->
     <li *ngFor="let hero of heroes">
       <a routerLink="view" [queryParams]="{id : hero.id}" routerLinkActive="active" ariaCurrentWhenActive="page">
-        <mat-card><mat-card-content>
+        <mat-card class = "card"><mat-card-content>
           {{ hero.name }}
         </mat-card-content></mat-card>
       </a>

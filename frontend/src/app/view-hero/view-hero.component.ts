@@ -36,12 +36,16 @@ level:0};
       // }
     }
     );
+    if(this.hero.id == '0')
+    {
+      this.router.navigate([''])
+    }
 
   }
   delete(): void {
     this.backend.deleteHero(this.id).subscribe(() => {
       console.log('Hero deleted successfully');});
-    //this.router.navigate([''])
+
   }
 
 }

@@ -31,5 +31,8 @@ The same issue with delete is occuring as with post, I think im not correctly fo
 **update - this was exactly what was happening, I was attempting to send a body instead of appending the id to the end of the url
 
 ## Issues with edit
-Edit does not excute correctly, I do not know if it is potentially a problem with the backend.service that I wrote or with the call to it.
+Edit does not excute correctly, I do not know if it is potentially a problem with the backend.service that I wrote or with the call to it. I forgot that you had to subscribe to the patch request in order for it to execute - fixed
+
+## Functionality completed
+all functionality is completed aside from the error message from the first task.
 
