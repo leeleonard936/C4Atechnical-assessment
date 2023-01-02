@@ -31,9 +31,6 @@ level:0};
       if(h.id == this.id){
         this.hero = h;
       }
-      // else{
-      //   this.router.navigate([''])
-      // }
     }
     );
     if(this.hero.id == '0')

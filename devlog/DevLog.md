@@ -4,7 +4,7 @@
 
 I plan to do all 4 of the front end tasks
 
-Unfortunately I can't get the reroute to work
+Unfortunately I can't get the error popup to work for the first task
 
 ## Installs
 installed angular material to make building the front end easier
@@ -34,5 +34,5 @@ The same issue with delete is occuring as with post, I think im not correctly fo
 Edit does not excute correctly, I do not know if it is potentially a problem with the backend.service that I wrote or with the call to it. I forgot that you had to subscribe to the patch request in order for it to execute - fixed
 
 ## Functionality completed
-all functionality is completed aside from the error message from the first task.
+all functionality is completed aside from the error message from the first task. 
 
